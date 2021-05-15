@@ -6,6 +6,7 @@ import { UserService } from './user.service';
 export class UserController {
   constructor(private readonly userService: UserService) { }
 
+  // It will validate the request data and create the user
   @Post('create')
   @UsePipes(new ValidationPipe())
   async createUser(@Body() userData: UserDto) {

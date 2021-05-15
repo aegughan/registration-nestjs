@@ -71,3 +71,24 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+## API Call
+
+## API To create a User:
+API URL: http://localhost:3000/user/create
+Request Body:
+{
+    "firstName": "Sample",
+    "lastName": "User",
+    "emailId": "sample@gmail.com",
+    "mobileNumber": "9988776655",
+    "password": "1234"
+}
+
+## API To Login:
+API URL: http://localhost:3000/login
+Request Body:
+{
+    "emailId":"sample@gmail.com",
+    "password": "1234"
+}

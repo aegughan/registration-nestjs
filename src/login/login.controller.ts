@@ -6,6 +6,8 @@ import { LoginService } from './login.service';
 export class LoginController {
   constructor(private readonly loginService: LoginService) { }
 
+  // Route path "/login" and it send the user data if the given emailId and Password matched
+  // otherwise it throw the relevant error message
   @Post()
   @UsePipes(new ValidationPipe())
   async userLogin(@Body() loginData: LoginDto) {

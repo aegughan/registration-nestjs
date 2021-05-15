@@ -7,7 +7,9 @@ import { LoginDto } from './dto/login.dto';
 export class LoginService {
     constructor(private userService: UserService) { }
 
+    // Service to check the user exist or not while validation
     async userLogin(loginData: LoginDto) {
+        // It will return user object if user exist for the given emailId 
         const userObj = await this.userService.findUser(loginData.emailId);
         if (userObj && userObj.password === loginData.password) {
             const { password, ...result } = userObj;
