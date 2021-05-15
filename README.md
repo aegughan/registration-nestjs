@@ -76,7 +76,9 @@ Nest is [MIT licensed](LICENSE).
 
 ## API To create a User:
 API URL: http://localhost:3000/user/create
+
 METHOD: POST
+
 Request Body:
 {
     "firstName": "Sample",
@@ -88,7 +90,9 @@ Request Body:
 
 ## API To Login:
 API URL: http://localhost:3000/login
+
 METHOD: POST
+
 Request Body:
 {
     "emailId":"sample@gmail.com",
